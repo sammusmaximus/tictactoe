@@ -1,5 +1,10 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .App-logo {
@@ -7,31 +12,83 @@
   pointer-events: none;
 }
 
+.Leaders {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+
+.Comms {
+  z-index: 0;
+
+
+}
+
+.App-comms {
+  width: 100vw;
+}
+
+/* commi symbol */
+
+.App-sung {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+/* Kim Il Sung Image */
+.App-starling {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+/* Starling Image */
+
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .App-starling {
+    animation: App-logo-spin infinite 30s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (prefers-reduced-motion: no-preference) {
+  .App-mao {
+    animation: App-logo-spin infinite 30s linear;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-sung {
+    animation: App-logo-spin infinite 30s linear;
+  }
+}
+
+.App-mao {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.Mao-Text {
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  bottom: 15%;
+  z-index: 1;
+
 }
 
 .App-link {
-  color: #61dafb;
+  color: #eef124;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
